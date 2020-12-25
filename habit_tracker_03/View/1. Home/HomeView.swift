@@ -12,7 +12,7 @@ struct HomeView: View {
     var results : FetchedResults<Category>
     
     @State var count = 0
-    @State var checked = 0
+    @State var checked = 0 
     
     var body: some View {
         NavigationView {
