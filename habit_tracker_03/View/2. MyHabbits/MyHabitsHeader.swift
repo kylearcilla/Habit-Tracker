@@ -14,7 +14,7 @@ struct MyHabitsHeader: View {
                 
                 // 1. Dashboard Title
                 HStack() {
-                    Text("My Courses")
+                    Text("My Habits")
                         .font(.system(size: 32, design: .rounded))
                         .foregroundColor(Color.black.opacity(0.80))
                         .fontWeight(.bold)
