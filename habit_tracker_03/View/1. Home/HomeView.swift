@@ -14,7 +14,6 @@ struct HomeView: View {
     @State var count = 0
     @State var checked = 0
     
-    
     var body: some View {
         NavigationView {
             VStack {

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CheckBox: View {
     @Environment(\.managedObjectContext) var context
-    @State var flag: Bool = false
     @ObservedObject var task: Task
     @FetchRequest(entity: Category.entity(), sortDescriptors: [], animation: .spring())
     var results : FetchedResults<Category>
@@ -20,7 +19,6 @@ struct CheckBox: View {
     var body: some View {
             Button(action:{
                 withAnimation(.spring()) {
-                    flag.toggle()
                     task.isDone.toggle()
                     countDisplay()
                     print(task.isDone)
